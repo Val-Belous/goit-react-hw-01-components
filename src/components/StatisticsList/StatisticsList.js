@@ -1,9 +1,10 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { StatisticsListItem } from 'components/StatisticsListItem/StatisticsListItem';
+import styles from './StatisticsList.module.css';
 
 export const StatisticsList = ({ stats }) => {
   return (
-    <ul className="stat-list">
+    <ul className={styles.statList}>
       {stats.map(({ id, label, percentage }) => (
         <StatisticsListItem key={id} text={label} percentage={percentage} />
       ))}
@@ -11,12 +12,12 @@ export const StatisticsList = ({ stats }) => {
   );
 };
 
-// StatisticsList.propTypes = {
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.number.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//   })
-// ),
-// };
+StatisticsList.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};

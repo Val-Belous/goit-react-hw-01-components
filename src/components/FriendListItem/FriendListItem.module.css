@@ -1,0 +1,22 @@
+.status {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.green {
+  display: inline-block;
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.red {
+  border-radius: 50%;
+  display: inline-block;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
