@@ -17,6 +17,6 @@ export const StatisticsList = ({ stats }) => {
 //       id: PropTypes.number.isRequired,
 //       label: PropTypes.string.isRequired,
 //       percentage: PropTypes.number.isRequired,
-//     })
-//   ),
+//   })
+// ),
 // };
